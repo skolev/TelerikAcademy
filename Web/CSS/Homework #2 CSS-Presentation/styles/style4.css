@@ -1,0 +1,112 @@
+body{
+	margin:0;
+}
+ul {
+    padding:2px;
+    display: inline;
+}
+li{
+	font-size: 12px;
+	font-family: Tahoma;
+    display:inline-block;
+    list-style-type: none;
+    padding-right: 5px;
+}
+
+li:first-letter {
+    text-decoration:underline;
+}
+nav {
+    width: 397px;
+    background: -webkit-linear-gradient(#FEFEFF 0, #E5EAF5 34%, #D4DBED 35%, #E1E6F6 100%);
+    background:    -moz-linear-gradient(#FEFEFF 0, #E5EAF5 34%, #D4DBED 35%, #E1E6F6 100%);
+    background:      -o-linear-gradient(#FEFEFF 0, #E5EAF5 34%, #D4DBED 35%, #E1E6F6 100%);
+    background:         linear-gradient(#FEFEFF 0, #E5EAF5 34%, #D4DBED 35%, #E1E6F6 100%);
+    padding-left: 10px;
+    border:1px solid;
+    border-bottom:1px solid #a0a0a0;
+}
+.displayField {
+	height: 38px;
+	width: 375px;
+    border:1px solid #a0a0a0;
+    border-radius:2px;
+    font-size:22px;
+	margin: 10px 10px 5px 10px;
+	padding: 10px 10px 0 0;
+    background: -webkit-linear-gradient(#E6EFFB, #FFFFFF);
+    background:    -moz-linear-gradient(#E6EFFB, #FFFFFF);
+    background:      -o-linear-gradient(#E6EFFB, #FFFFFF);
+    background:         linear-gradient(#E6EFFB, #FFFFFF);
+    font-family: Consolas;
+}
+span.firstLetter{
+	text-decoration: underline;
+}
+section{
+	width: 407px;
+	border: 1px solid #999;
+	background: -webkit-linear-gradient(#F0F0F0 0, #D9E4F1 100px);
+    background:    -moz-linear-gradient(#F0F0F0 0, #D9E4F1 100px);
+    background:      -o-linear-gradient(#F0F0F0 0, #D9E4F1 100px);
+    background:         linear-gradient(#F0F0F0 0, #D9E4F1 100px);
+    font-family: Consolas, monospace;
+}
+.numberInBinary {
+    border:1px solid #a0a0a0;
+    border-radius:2px;
+    width: 93.8%;
+    margin-left: 10px;
+    padding: 1px;
+}
+.numberInBinary ul {
+    padding: 0;
+    margin: 0;
+}
+.numberInBinary ul li {
+    font-family: Consolas;
+    list-style: none;
+    display: inline;
+    margin-left: 16px;
+}
+li.position {
+    color: #afbac7;
+}
+.numeralSystemField {
+    border:1px solid #a0a0a0;
+    border-radius:2px;
+    font-family: Tahoma;
+    font-size: 12px;
+    margin-top: 5px;
+    padding: 5px 0 4px 3px;
+    width: 65px;
+}
+.numeralSystems span {
+    display: block;
+    margin-bottom: 1px;
+}
+.numberSize {
+    border:1px solid #a0a0a0;
+    border-radius:2px;
+    font-family: Tahoma;
+    font-size: 12px;
+    margin-top: 5px;
+    padding: 5px 0 4px 3px;
+    width: 65px;
+}
+.numberSize span {
+    display: block;
+    margin-bottom: 1px;
+}
+
+}
+div.numberInBinary{
+	line-height: 2px;
+	height: 50px;
+	width: 378px;
+}
+div.numberInBinary ul li{
+	display: inline;
+	list-style-type: none;
+	margin-left: 6px;
+}

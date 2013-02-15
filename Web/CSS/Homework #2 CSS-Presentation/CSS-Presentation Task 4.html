@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="styles/style4.css">
+	</head>
+	<body>
+		<header>
+			<nav>	
+				<ul>
+					<li>View</li>
+					<li>Edit</li>
+					<li>Help</li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+			<form action="post">
+				<input class="displayField" type="text" value="8854455" dir="rtl" />
+			</form>
+			<div class="numberInBinary">
+				<ul>
+					<li>0000</li>
+					<li>0000</li>
+					<li>0000</li>
+					<li>0000</li>
+					<li>0000</li>
+					<li>0000</li>
+					<li>0000</li>
+					<li>0000</li>
+				</ul>
+				<ul class="position">
+					<li>63&nbsp;&nbsp;</li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+					<li>47&nbsp;&nbsp;</li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+					<li>&nbsp;&nbsp;32</li>
+				</ul>
+				<ul>
+					<li>0000</li>
+					<li>0000</li>
+					<li>1000</li>
+					<li>0111</li>
+					<li>0001</li>
+					<li>1011</li>
+					<li>1011</li>
+					<li>0111</li>
+				</ul>
+				<ul class="position">
+					<li>31&nbsp;&nbsp;</li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+					<li>15&nbsp;&nbsp;</li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+					<li>&nbsp;&nbsp;&nbsp;0</li>
+				</ul>
+			</div>
+			<div class="numeralSystemField">
+				<span><input type="radio" name="numeralSystem" />Hex</span>
+				<span><input type="radio" name="numeralSystem" checked/>Dec</span>
+				<span><input type="radio" name="numeralSystem" />Oct</span>
+				<span><input type="radio" name="numeralSystem" />Bin</span>
+			</div>
+			<div class="numberSize">
+				<span><input type="radio" name="numberSize" />Qword</span>
+				<span><input type="radio" name="numberSize" checked/>Dword</span>
+				<span><input type="radio" name="numberSize" />Word</span>
+				<span><input type="radio" name="numberSize" />Byte</span>
+			</div>
+			<div class="inputButtons">
+				<div class="rows">
+					<button class="disabled">&nbsp;</button>
+					<button class="operators">Mod</button>
+					<button class="disabled">A</button>
+					<button class="memoryBtns">MC</button>
+					<button class="memoryBtns">MR</button>
+					<button class="memoryBtns">MS</button>
+					<button class="memoryBtns">M+</button>
+					<button class="memoryBtns">M-</button>
+				</div>
+				<div class="rows">
+					<button class="operators">(</button>
+					<button class="operators">)</button>
+					<button class="disabled">B</button>
+					<button class="operators">&larr;</button>
+					<button class="operators">CE</button>
+					<button class="operators">C</button>
+					<button class="operators">&#177;</button>
+					<button class="disabled">&#8730;</button>
+				</div>
+				<div class="rows">
+					<button class="operators">RoL</button>
+					<button class="operators">RoR</button>
+					<button class="disabled">C</button>
+					<button class="inputNumber">7</button>
+					<button class="inputNumber">8</button>
+					<button class="inputNumber">9</button>
+					<button class="operators">/</button>
+					<button class="disabled">%</button>
+				</div>
+				<div class="rows">
+					<button class="operators">Or</button>
+					<button class="operators">Xor</button>
+					<button class="disabled">D</button>
+					<button class="inputNumber">4</button>
+					<button class="inputNumber">5</button>
+					<button class="inputNumber">6</button>
+					<button class="operators">*</button>
+					<button class="disabled">1/x</button>
+				</div>
+				<div class="rows">
+					<button class="operators">Lsh</button>
+					<button class="operators">Rsh</button>
+					<button class="disabled">E</button>
+					<button class="inputNumber">1</button>
+					<button class="inputNumber">2</button>
+					<button class="inputNumber">3</button>
+					<button class="operators">-</button>
+				</div>
+				<button id="equals" class="operators">=</button>
+				<div class="rows">
+					<button class="operators">Not</button>
+					<button class="operators">And</button>
+					<button class="disabled">F</button>
+					<button id="null" class="inputNumber">0</button>
+					<button class="border disabled">.</button>
+					<button class="border special">+</button>	
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

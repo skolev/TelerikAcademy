@@ -1,0 +1,55 @@
+﻿body {
+    width: 665px;
+}
+header{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.table {
+    display: table;
+
+}
+.cell {
+    display: table-cell;
+    text-align:center;
+}
+div.cell:last-of-type {
+    vertical-align:middle;
+    padding-left: 30px;
+}
+.tableDiv {
+    display:table;
+    border:solid black 2px;
+    height: 430px;
+    padding: 10px;
+}
+
+.row .rowDiv, .innerRow{
+    display:table-row;
+}
+.cellDiv{
+    height: 140px;
+    width: 235px;
+    display:table-cell;
+}
+fieldset {
+    height: 120px;
+}
+legend {
+    text-align: center;
+}
+img{
+    float: left;
+    margin-right:19px;
+    margin-bottom: 0;
+}
+.innerCell {
+    display:table-cell;
+    padding-left: 30px;
+}
+hr {
+    text-align:center;
+    width: 95%;
+
+}

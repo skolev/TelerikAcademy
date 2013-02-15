@@ -1,0 +1,41 @@
+body{
+	background: #a9a9a9;
+}
+body>header{	
+	text-align: center;
+}
+body>footer{
+	text-align: center;
+}
+
+ul li{
+	list-style: none;
+}
+header nav ul li a {
+	color: #fff;
+	font: 20px bold;
+    text-decoration:none
+
+}
+header nav ul li:last-child{
+	text-decoration: underline;
+}
+a.current{
+	background: #d3d3d3;
+}
+h1{
+	color: #fafad2;
+}
+body>header h1{
+	font-size: 40px;
+}
+article header h1{
+	font-size: 25px;
+}
+article footer p a{
+	text-decoration: none;
+	color: #000;
+}
+article footer p a:hover{
+	text-decoration: underline;
+}

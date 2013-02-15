@@ -1,0 +1,17 @@
+body ul li {
+  list-style-type: none;
+  display: inline;
+  padding-right: 5px; }
+  body ul li label img {
+    width: 100px;
+    height: 100px; }
+  body ul li input[type="radio"] {
+    display: none; }
+    body ul li input[type="radio"] + img {
+      display: none; }
+    body ul li input[type="radio"]:checked + img {
+      position: absolute;
+      display: block;
+      width: 600px;
+      height: 500px; }
+

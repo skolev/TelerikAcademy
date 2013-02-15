@@ -1,0 +1,48 @@
+body{
+	background-color: #595959;
+	font-family: Arial;
+	font-size: 15px;
+}
+th{
+	text-align: left;
+	font-size: 20px;
+	font-weight: normal;
+}
+table, tr
+{
+	vertical-align: top;
+	empty-cells: hide;
+}
+td{
+	padding: 5px;
+}
+tr td:first-child{
+	color: #f3fffa;
+	font-style: oblique;
+}
+.sclass{
+	color: #b1bbbb;
+}
+.link{
+	text-decoration: none;
+	color: #e1eaa9;
+}
+#active{
+	color: #fe0112;
+}
+#status{
+	color: #e06a2e;
+}
+span{
+	line-height: 15px;
+}
+span#circle {
+  background: #71b47a;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  color: #71b47a;
+  display: inline-block;
+  text-align: center;
+  width: 10%; 
+}

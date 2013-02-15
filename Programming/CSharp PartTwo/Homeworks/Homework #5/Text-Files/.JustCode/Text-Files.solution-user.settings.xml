@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<JustCodeSettings Version="0.0" Timestamp="2a8a3a23-fb6f-4315-a0bd-5bab305bc0da">
+  <IgnoredErrorsAndWarningsSettings xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <IgnoredErrorsAndWarnings>
+      <FilePath>
+        <Path>C:\Users\Svetlio\Desktop\Telerik\First semester\C# part 2\Homeworks\Homework #5\Text-Files\05.MaxPlatform\MaxPlatform.cs</Path>
+        <ProjectFullName>C:\Users\Svetlio\Desktop\Telerik\First semester\C# part 2\Homeworks\Homework #5\Text-Files\05.MaxPlatform\05.MaxPlatform.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>7</Column>
+          <Text>The namespace of this type doesn't match the project default namespace &amp; directory</Text>
+          <Line>4</Line>
+        </IgnoredElement>
+      </FilePath>
+    </IgnoredErrorsAndWarnings>
+  </IgnoredErrorsAndWarningsSettings>
+</JustCodeSettings>

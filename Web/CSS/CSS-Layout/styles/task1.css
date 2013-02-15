@@ -1,0 +1,20 @@
+a{
+	color: black;
+	text-decoration: none;
+}
+ul{
+	list-style-type: none;
+}
+li ul {
+	display:none;
+}
+ li:hover ul {
+	display:block;
+	padding-left: 5px;
+}
+.primList > a:hover{
+	text-decoration: underline;
+}
+li ul li>a{
+	color:grey;
+}

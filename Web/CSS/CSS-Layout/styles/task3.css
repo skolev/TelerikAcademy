@@ -1,0 +1,69 @@
+body{
+	width: 700px;
+	background-color: #3b3b3b;
+	color: #939393;
+	font: 13px/17px Verdana, Arial, Helvetica, sans-serif;
+}
+fieldset{
+	border: none;
+	display: inline;
+	background: url(../images/from_shadow.png) 0 100% no-repeat;
+}
+fieldset>legend{
+	height: 44px;
+	font-family: Georgia;
+	font-size: 20px;
+	font-weight: bold;
+	float:left;
+	color: #fefefe;
+	background-image: url(../images/yellow_monitor.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-left: 60px;
+	line-height: 25px;
+
+}
+input{
+	padding-left: 10px;
+}
+::-webkit-input-placeholder {
+   color: black;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: black;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: black; 
+}
+
+:-ms-input-placeholder {  
+   color: black;  
+}
+.button{
+	width: 56px;
+	height: 28px;
+	float: right;
+	background: url(../images/button.gif) 0 0 no-repeat #3a3a3a;
+	border: none;
+	margin: -25px 10px 0;
+
+}
+article{
+	width: 602px;
+}
+article h2{
+	margin:0;
+	color: #f7d818;
+	font: 28px/68px Georgia, "Times New Roman", Times, serif;
+}
+article p{
+	margin: 0px;
+	padding: 0px;
+}
+article p span{
+	color: #ffffff;
+}
+
+
