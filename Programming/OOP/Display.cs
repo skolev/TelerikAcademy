@@ -2,11 +2,11 @@
 
 public class Display
 {
-    private decimal? displaySize;
+    private float? displaySize;
     private ulong? numberOfColors;
 
 
-    public decimal? DisplaySize
+    public float? DisplaySize
     {
         get { return displaySize; }
         set { displaySize = value; }
@@ -22,6 +22,17 @@ public class Display
     {
         this.DisplaySize = null;
         this.NumberOfColors = null;
+    }
+
+    public Display(float displaySize)
+        : this()
+    {
+        this.DisplaySize = displaySize;
+    }
+    public Display(float displaySize, ulong numberOfColors)
+        : this(displaySize)
+    {
+        this.NumberOfColors = numberOfColors;
     }
 
 

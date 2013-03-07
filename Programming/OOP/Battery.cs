@@ -1,15 +1,16 @@
 ﻿using System;
 
-
+public enum BatteryType
+{
+    LiIon, NiMH, NiCd, LiPoly
+}
 
 public class Battery
 {
-    public enum BatteryType
-    {
-        LiIon, NiMH, NiCd, LiPoly
-    }
 
-    public BatteryType type;
+
+    private BatteryType type;
+    private string model;
     private int? hoursTalk;
     private int? hoursStandBy;
 
@@ -17,6 +18,12 @@ public class Battery
     {
         get { return type; }
         set { type = value; }
+    }
+
+    public string Model
+    {
+        get { return model; }
+        set { model = value; }
     }
 
     public int? HoursTalk
@@ -33,15 +40,19 @@ public class Battery
 
     public Battery()
     {
+        this.Model = null;
         this.HoursStandBy = null;
         this.HoursTalk = null;
     }
-    public Battery(int hoursTalk, int hoursStandBy)
+
+    public Battery(string model, int hoursTalk, int hoursStandBy, BatteryType type)
         : this()
     {
-        this.Type = type;
+
+        this.Model = model;
         this.HoursStandBy = hoursStandBy;
         this.HoursTalk = hoursTalk;
+        this.Type = type;
     }
 
 
