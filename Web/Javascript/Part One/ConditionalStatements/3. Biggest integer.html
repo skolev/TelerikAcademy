@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Biggest integer</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <label for="tb-firstNum">First number: </label>
+	<input type="text" id="tb-firstNum" />
+    <label for="tb-secondNum">Second number: </label>
+	<input type="text" id="tb-secondNum" />
+    <label for="tb-thirdNum">Third number: </label>
+	<input type="text" id="tb-thirdNum" />
+	<a href="#" onclick="onSignBtnClick()">Check</a>
+	<div id="js-console">
+	</div>
+    <script src="scripts/js-console.js">	  
+    </script>
+	<script>
+
+	    function onSignBtnClick() {
+
+	        var firstNumber = jsConsole.readInteger("#tb-firstNum");
+	        var secondNumber = jsConsole.readInteger("#tb-secondNum");
+	        var thirdNumber = jsConsole.readInteger("#tb-thirdNum");
+
+	        if (firstNumber > secondNumber) {
+                
+	            if (firstNumber > thirdNumber) {
+	                jsConsole.writeLine("First number is biggest of three.")
+	            }
+	            else {
+                    jsConsole.writeLine("Third number is biggest of three.")
+	            }
+	        }
+	        if (secondNumber > thirdNumber) {
+	            jsConsole.writeLine("Second number is biggest of three.")
+	        }
+	        else {
+	            jsConsole.writeLine("Third number is biggest of three.")
+	        }
+	    }
+
+	</script>
+</body>
+</html>

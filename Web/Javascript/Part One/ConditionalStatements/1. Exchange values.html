@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Exchange values</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <label for="tb-firstNum">First: </label>
+	<input type="text" id="tb-firstNum" />
+    <label for="tb-secondNum">Second: </label>
+	<input type="text" id="tb-secondNum" />
+	<a href="#" onclick="onCompareBtnClick()">Calculate!</a>
+	<div id="js-console">
+	</div>
+    <script src="scripts/js-console.js">	  
+    </script>
+	<script>
+
+	    function onCompareBtnClick() {
+
+	        var firstNumber = jsConsole.readFloat("#tb-firstNum");
+	        var secondNumber = jsConsole.readFloat("#tb-secondNum");
+	        var temp;
+	        
+	        if (firstNumber > secondNumber) {
+
+	            temp = firstNumber;
+	            firstNumber = secondNumber;
+	            secondNumber = temp;
+
+                jsConsole.writeLine("Exchanged values!")
+	        }
+
+	        jsConsole.writeLine("First number: " + firstNumber);
+	        jsConsole.writeLine("Second number: " + secondNumber);
+	    }
+
+	</script>
+</body>
+</html>
