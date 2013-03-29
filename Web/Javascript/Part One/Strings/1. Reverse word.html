@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>1. Reverse word</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <label for="tb-word">Enter word: </label>
+    <input type="text" id="tb-word" />
+	<a href="#" id="btn-check-prime" onclick="onBtnClick()">Reverse word!</a>
+	<div id="js-console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>
+	<script>
+
+	    function onBtnClick() {
+	        var enteredString = jsConsole.read("#tb-word");
+	        var reversedString = reverseWord(enteredString);
+	        jsConsole.writeLine(reversedString);
+	    }
+
+	    function reverseWord(str) {
+	        var charArr = str.split("");
+	        var reverse = "";
+	        for (var index = (charArr.length - 1); index >= 0; index--) {
+	            reverse += charArr[index];
+	        }
+	        return reverse;
+	    }
+
+	</script>
+</body>
+</html>
