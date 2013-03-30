@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>6. Remove tags</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <label for="tb-text">Enter text: </label>
+    <input type="text" id="tb-text" />
+    <a href="#" onclick="onBtnClick()">Remove!</a>
+    <div id="js-console">
+    </div>
+    <script src="scripts/js-console.js">	  
+    </script>
+    <script>
+        function onBtnClick() {
+
+            var txt = jsConsole.read("#tb-text");
+            var temp = "";
+            var firstIndex = txt.indexOf('>');
+            var secondIndex = txt.indexOf('<', 1);
+            while (firstIndex != -1 && secondIndex != -1) {
+                temp = (removeTags(txt, firstIndex, secondIndex));
+                if (temp.length != 0)
+                {
+                    //.Trim removes white spaces
+                    jsConsole.write(temp);
+                }
+                firstIndex = txt.indexOf('>', firstIndex + 1);
+                secondIndex = txt.indexOf('<', secondIndex + 1);
+            }
+
+        }
+
+        function removeTags(text, start, end) {
+            var str = "";
+            for (var i = start + 1; i < end; i++)
+            {
+                str = str.concat(text[i]);
+            }
+            return str;
+        }
+    </script>
+</body>
+</html>

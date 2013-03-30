@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>5. Replace whitespace</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <label for="tb-text">Enter text: </label>
+    <input type="text" id="tb-text" />
+    <a href="#" onclick="onBtnClick()">Replace!</a>
+    <div id="js-console">
+    </div>
+    <script src="scripts/js-console.js">	  
+    </script>
+    <script>
+        function onBtnClick() {
+
+            var txt = jsConsole.read("#tb-text");
+            wordCounter(txt);
+
+
+        }
+
+        function wordCounter(text) {
+            var regexp = /\s/g;
+            while(text.match(regexp) != null) {
+                text = text.replace(" ", "&amp;nbsp");
+            }
+            jsConsole.writeLine(text);
+        }
+    </script>
+</body>
+</html>

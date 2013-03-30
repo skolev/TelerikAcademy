@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>9. Valid email</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+
+    <label for="tb-text">Enter text:  </label>
+    <input type="text" id="tb-text" />
+    <a href="#" onclick="onBtnClick()">Replace!</a>
+    <div id="js-console">
+    </div>
+    <script src="scripts/js-console.js">	  
+    </script>
+    <script>
+        function onBtnClick() {
+            var txt = jsConsole.read("#tb-text");
+            var validMail = /(([\w-]+\.)+[\w-]+|([a-zA-Z]{1}|[\w-]{2,}))@[\w*]{2,}.[\w*]{2,}\s/gi;
+            var vMail = /(([\w-]+\.)+[\w-]+|([a-zA-Z]{1}|[\w-]{2,}))@[\w*]{2,}.[\w*]{2,}\S[\w*]{2,}/gi;
+            var result = [];
+            result.push(txt.match(validMail));
+            result.push(txt.match(vMail));
+            for (var i = 0; i < result.length; i++) {
+                jsConsole.writeLine(result[i]);
+            }
+        }
+    </script>
+</body>
+</html>

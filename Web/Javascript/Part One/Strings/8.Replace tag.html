@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>8. Replace tag</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+
+    <label for="tb-text">Enter text:  </label>
+    <input type="text" id="tb-text" />
+    <a href="#" onclick="onBtnClick()">Replace!</a>
+    <div id="js-console">
+    </div>
+    <script src="scripts/js-console.js">	  
+    </script>
+    <script>
+        function onBtnClick() {
+
+            var txt = jsConsole.read("#tb-text");
+            jsConsole.writeLine(txt);
+            var anchorTag = /<a href="/g;
+            var tagClose = /">"/g;
+            var closingAnchorTag = /<\/a>/g;
+
+            txt = txt.replace(anchorTag, "[URL=");
+            txt = txt.replace(tagClose, "]");
+            txt = txt.replace(closingAnchorTag, "[/URL]");
+            jsConsole.writeLine(txt);
+
+        }
+    </script>
+</body>
+</html>
