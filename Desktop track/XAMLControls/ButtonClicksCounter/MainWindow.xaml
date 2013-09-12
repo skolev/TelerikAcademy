@@ -1,0 +1,9 @@
+﻿<Window x:Class="ButtonClicksCounter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="100" Width="300">
+    <DockPanel>
+        <Label Name="labelClickCounter" DockPanel.Dock="Top" Target="{Binding ElementName=ButtonClicker}">counter</Label>
+        <Button Name="buttonClicker" Click="ButtonClickCounter" >Click me please :)</Button>
+    </DockPanel>
+</Window>

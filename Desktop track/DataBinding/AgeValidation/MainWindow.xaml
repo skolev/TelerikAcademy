@@ -1,0 +1,51 @@
+﻿<Window x:Class="AgeValidation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:AgeValidation"
+        Title="MainWindow" Width="242" Height="180">
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBox}">
+            <Setter Property="Validation.ErrorTemplate">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <WrapPanel>
+                            <Border BorderBrush="Red" BorderThickness="2" VerticalAlignment="Top">
+                                <AdornedElementPlaceholder  />
+                            </Border>
+                            <TextBlock Foreground="Red" FontSize="12pt">!</TextBlock>
+                        </WrapPanel>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <StackPanel Margin="10">
+        <Grid>
+            <TextBlock Text="Person Name:" VerticalAlignment="Center" />
+            <TextBox Name="textBoxName" Width="100" Margin="85,0,0,0">
+                <TextBox.Text>
+                    <Binding Path="Name" UpdateSourceTrigger="PropertyChanged">
+                        <Binding.ValidationRules>
+                            <local:FullNameValidationRule />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+        </Grid>
+        <Grid>
+            <TextBlock Text="Person Age:" VerticalAlignment="Center" />
+            <TextBox Name="textBoxAge" Width="100" Margin="85,0,0,0">
+                <TextBox.Text>
+                    <Binding Path="Age" UpdateSourceTrigger="PropertyChanged">
+                        <Binding.ValidationRules>
+                            <local:AgeValidationRule />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+        </Grid>
+        <Grid>
+            <Slider Name="SliderAge" Minimum="1" Maximum="100" Value="{Binding ElementName=textBoxAge, Path=Text}" IsSnapToTickEnabled="True" TickFrequency="1"/>
+        </Grid>
+    </StackPanel>
+</Window>

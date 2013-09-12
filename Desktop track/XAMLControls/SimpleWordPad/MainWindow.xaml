@@ -1,0 +1,47 @@
+﻿<Window x:Class="SimpleWordPad.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="470" Width="610">
+    <StackPanel>
+        <ToolBarTray>
+            <ToolBar>
+                <ToggleButton IsEnabled="True" Name="toggleButtonWrap" Width="85" Height="30" Click="ToggleButton_Click" Content="Word wrap"></ToggleButton>
+            </ToolBar>
+            <ToolBar>
+                <Label>Font Family</Label>
+                <ComboBox Name="comboBoxFontFamilies" Width="70" ItemsSource="{x:Static Fonts.SystemFontFamilies}" SelectedIndex="12" SelectionChanged="ChangeTextFont"/>
+                <Label>Font Size</Label>
+                <ComboBox Name="comboBoxFontSizes" SelectedIndex="4" SelectionChanged="ChangeFontSize">
+                    <ComboBoxItem Content="8" HorizontalContentAlignment="Right"/>
+                    <ComboBoxItem Content="9" HorizontalContentAlignment="Right"/>
+                    <ComboBoxItem Content="10" HorizontalContentAlignment="Right"/>
+                    <ComboBoxItem Content="11" HorizontalContentAlignment="Right"/>
+                    <ComboBoxItem Content="12" HorizontalContentAlignment="Right"/>
+                    <ComboBoxItem Content="14" HorizontalContentAlignment="Right"/>
+                    <ComboBoxItem Content="16" HorizontalContentAlignment="Right"/>
+                    <ComboBoxItem Content="18" HorizontalContentAlignment="Right"/>
+                    <ComboBoxItem Content="20" HorizontalContentAlignment="Right"/>
+                    <ComboBoxItem Content="22" HorizontalContentAlignment="Right"/>
+                    <ComboBoxItem Content="24" HorizontalContentAlignment="Right"/>
+                    <ComboBoxItem Content="26" HorizontalContentAlignment="Right"/>
+                    <ComboBoxItem Content="28" HorizontalContentAlignment="Right"/>
+                    <ComboBoxItem Content="36" HorizontalContentAlignment="Right"/>
+                    <ComboBoxItem Content="48" HorizontalContentAlignment="Right"/>
+                    <ComboBoxItem Content="72" HorizontalContentAlignment="Right"/>
+                </ComboBox>
+            </ToolBar>
+            <ToolBar>
+                <Button  Margin="5 0" Name="buttonLoad" Click="buttonLoadClick">Load File</Button>
+                <Button  Margin="5 0" Name="buttonSave" Click="buttonSaveClick">Save File</Button>
+            </ToolBar>
+        </ToolBarTray>
+        <TextBox
+            Name="textBoxEditArea"
+            TextWrapping="Wrap"
+            Width="600"
+            Height="400" 
+            ScrollViewer.VerticalScrollBarVisibility="Visible"
+            ScrollViewer.HorizontalScrollBarVisibility="Auto"
+            ></TextBox>
+    </StackPanel>
+</Window>

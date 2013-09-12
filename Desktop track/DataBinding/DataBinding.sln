@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1-2.TextFontSize", "TextFontSize\1-2.TextFontSize.csproj", "{B91EA2ED-E9F0-4F35-B131-A6AFF308A75A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.GetTextAndColors", "GetTextAndColors\3.GetTextAndColors.csproj", "{E2FB964E-25F2-40EA-8DD0-18FA266E185F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.AgeValidation", "AgeValidation\4.AgeValidation.csproj", "{75A72E3C-B710-400B-B29C-464F8AE41667}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B91EA2ED-E9F0-4F35-B131-A6AFF308A75A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B91EA2ED-E9F0-4F35-B131-A6AFF308A75A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B91EA2ED-E9F0-4F35-B131-A6AFF308A75A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B91EA2ED-E9F0-4F35-B131-A6AFF308A75A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2FB964E-25F2-40EA-8DD0-18FA266E185F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2FB964E-25F2-40EA-8DD0-18FA266E185F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2FB964E-25F2-40EA-8DD0-18FA266E185F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2FB964E-25F2-40EA-8DD0-18FA266E185F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75A72E3C-B710-400B-B29C-464F8AE41667}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75A72E3C-B710-400B-B29C-464F8AE41667}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75A72E3C-B710-400B-B29C-464F8AE41667}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75A72E3C-B710-400B-B29C-464F8AE41667}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

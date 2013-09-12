@@ -1,0 +1,13 @@
+﻿<Window x:Class="TextFontSize.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel>
+        <Label Content="{Binding ElementName=SliderFont, Path = Value}"></Label>
+        <Slider Name="SliderFont" Minimum="8" Maximum="72" Value="12" IsSnapToTickEnabled="True" TickFrequency="1"/>
+        <TextBlock FontSize= "{Binding ElementName=SliderFont, Path = Value}"  TextWrapping="Wrap" Text="42 - answer to the ultimate question of Life, the Universe, and Everything, calculated by an enormous supercomputer over a period of 7.5 million years."></TextBlock>
+        <Button Content="Set to Min" Click="ButtonMinClick" />
+        <Button Content="Set to Default" Click="ButtonDefaultClick" />
+        <Button Content="Set to Large" Click="ButtonMaxClick" />
+    </StackPanel>
+</Window>
