@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicMathOperations", "BasicMathOperations\BasicMathOperations.csproj", "{267453C0-C296-4374-818A-81EB7EF4BE04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvancedMathOperations", "AdvancedMathOperations\AdvancedMathOperations.csproj", "{ADB42DE8-DCA5-4898-B948-46E2A16122AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingAlgorithms", "SortingAlgorithms\SortingAlgorithms.csproj", "{AF2AC9F2-7CC5-4BB0-829C-79256FC556F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{267453C0-C296-4374-818A-81EB7EF4BE04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{267453C0-C296-4374-818A-81EB7EF4BE04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{267453C0-C296-4374-818A-81EB7EF4BE04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{267453C0-C296-4374-818A-81EB7EF4BE04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADB42DE8-DCA5-4898-B948-46E2A16122AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADB42DE8-DCA5-4898-B948-46E2A16122AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADB42DE8-DCA5-4898-B948-46E2A16122AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADB42DE8-DCA5-4898-B948-46E2A16122AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF2AC9F2-7CC5-4BB0-829C-79256FC556F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF2AC9F2-7CC5-4BB0-829C-79256FC556F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF2AC9F2-7CC5-4BB0-829C-79256FC556F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF2AC9F2-7CC5-4BB0-829C-79256FC556F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
